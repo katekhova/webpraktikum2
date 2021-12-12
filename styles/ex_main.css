@@ -1,0 +1,327 @@
+* {box-sizing: border-box; }
+body {line-height: 1.5; overflow-x: hidden; margin:0; font-family: "Poppins", "Courier New", mono;}
+button { font-family: "Poppins", mono;}
+#appPreview {position: relative;}
+#dwnldBtnGreen {
+  background-color: #4CAF50;
+  width: 100%;
+  border: 0 solid transparent;
+  height: 44.5px;
+  color: white;
+  font-size: 20px;
+}
+#dwnldBtnGreen:hover {
+  background-color: #d0d0d0;
+  color: black;
+}
+.mySlides {display: none;}
+.mySlides img {
+  top:0;
+  width: 100%;
+  height: auto;
+}
+.dwnldBlock {
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 50%; 
+  left:2%;
+  transform: translate(0%,-50%);
+  width: 30%;
+  margin-left: 5px;
+  vertical-align:middle;
+  text-align: center;
+  padding: 1px 25px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.dwnldBlock:hover {opacity:1;}
+.dwnldBlock h1 {margin-bottom: 20px; font-weight: 400; font-size: 26px;}
+ h1#coral {color: #ff4444;}
+.dwnldBlock hr {opacity: 0.4;}
+.dwnldBlock p {margin: 20px 0; font-weight: 500; font-size: 18px;}
+#btnGreen, #btnRed, #btnBlue {
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+#btnGreen {background-color: #4CAF50;}
+#btnRed {background-color: #f44336;}
+#btnBlue {background-color: #3f51b5;}
+#btnBlue:hover, #btnRed:hover, #btnGreen:hover {background-color: #d0d0d0; color: black;}
+#nextRight {
+  display: none;
+  position: absolute;
+  top: 50%; 
+  right:2.5%;
+  transform: translate(0%,-50%);
+  background-color: black;
+  color: white;
+  width: 140px;
+  height: 45px;
+  margin-top: -5px;
+  border-radius: 4px;
+  padding-top: 8px;
+  font-size: 18px;
+  text-align: center; 
+}
+#nextRight:hover {background-color: #f0f0f0; color: black;}
+#nextBottom {
+  display:block;
+  width:100%;
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  height: 36px;
+  text-align: center; 
+  vertical-align: middle;
+}
+#nextBottom:hover {background-color: #c0c0c0; color: black;}
+
+#contentLeft {
+  margin-top: 60px;
+}
+#leftfloat {
+  width:100%;
+}
+#leftfloat h2 {font-size: 68px; padding: 25px 20px 0; margin-bottom: 10px;}
+#leftfloat h3 {color: #4CAF50; font-size: 50px; margin-top: 0; padding: 0px 20px; margin-bottom: 10px;}
+#leftfloat p {padding-left: 20px; font-size: 17px;}
+#leftfloat p strong {font-size: 26px; font-weight: 500;}
+#dwnldBtnGrey 
+{
+  display: block;
+  height: 50px; 
+  width: 95%;
+  margin:auto;
+  background-color: #fff;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 20px;
+}
+#dwnldBtnGrey:hover, #btnGrey:hover {background-color: #d0d0d0;}
+#btnGrey {
+  display:none;
+  height: 50px; 
+  width: 280px;
+  margin-left: 20px;
+  background-color: #eee;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 20px;
+}
+#rightfloatImg {
+  width: 63.5%;
+  margin: auto;
+  text-align: center;
+}
+#rightfloatImg img {max-width: 100%; width: 370px; height: auto;}
+
+#contentRight {
+  background-color: #eee;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+#leftfloatImg {
+  display: none;
+}
+#rightfloat {
+  width: 100%;
+}
+
+#rightfloat h2 {
+  font-size: 68px; padding: 20px 20px 0; margin-bottom: 10px;
+}
+#rightfloat h3 {
+  color: #f44336; 
+  font-size: 50px; 
+  margin-top: 0; 
+  padding: 0px 20px; 
+  margin-bottom: 10px;
+}
+#rightfloat p {padding-left: 20px; font-size: 17px;}
+#rightfloat p strong {font-size: 26px; font-weight: 500;}
+
+#picsContent {
+  background-color: #616161;
+  padding-bottom: 5px;
+}
+#picsContent h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 75px 0 0;
+}
+#picsContent h5 {
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin:0;
+  padding: 15px 0;
+}
+.row {display: block; margin: 70px 2px;}
+.quart {
+  float: left; 
+  width: 25%;
+  text-align: center;
+  color: white;
+  font-size:17px;
+}
+
+#priceList {
+  text-align: center;
+  padding-top: 25px;
+}
+#priceList h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+}
+#priceList h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 75px;
+}
+#priceList ul {
+  list-style-type: none; 
+  padding: 0; 
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 2px 7px #bbb;
+}
+#priceList ul:hover {box-shadow: 0 4px 12px #aaa;}
+#basicPlan li:first-child {
+  background-color: #606060;
+  color: white;
+  padding: 35px 0;
+  font-size: 24px;
+}
+#priceList li {
+  font-size: 17px;
+  padding: 20px 0;
+  border-bottom: 1px solid #d0d0d0;
+}
+#priceList li:last-child {
+  background-color: #f2f2f2;
+  padding: 25px 0;
+} 
+.dwnldBtnBlack {
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 10px 25px;
+}
+.dwnldBtnBlack:hover {background-color:#bbb; color: black;}
+#priceList .price {
+  font-size: 30px;
+  opacity: 0.6;
+  padding: 25px 0;
+}
+#premiumPlan li:first-child {
+  background-color: #f44336;
+  color: white;
+  padding: 35px 0;
+  font-size: 24px;
+}
+footer {
+  margin-top: 50px;
+  background-color: #f0f0f0;
+  text-align: center;
+  height: 160px;
+  padding: 50px 0;
+}
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+#dwnldModal {
+  background-color: white;
+  position: relative;
+  width: auto;
+  margin: 50px 10px;
+  padding: 20px 0 50px 40px;
+}
+#closeBtn {
+  float: right;
+  font-weight: 1000;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  width: 50px;
+  height: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+#closeBtn:hover {background-color:#ccc;}
+#dwnldModal h3 {
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 3;
+  margin-bottom: 0;
+}
+#dwnldModal h5 {
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 10px;
+}
+#dwnldModal input {
+  width: 90%;
+  margin: auto;
+  padding: 8px 5px;
+  font-size: 17px;
+  border: 1px solid #bbb;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+#dwnldModal #dwnldBtnMain {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  background-color: #f44336;
+  font-size: 17px;
+  padding: 10px 0;
+  border: none;
+}
+#dwnldModal #dwnldBtnMain:hover {background-color:#ccc; color: black;}
+@media only screen and (min-width:670px) {
+  #dwnldBtnGreen, #nextBottom, #dwnldBtnGrey {display: none;}
+  .dwnldBlock, #nextRight, #btnGrey {display: block;}
+  #leftfloat, #basicPlan, #premiumPlan {float:left; width: 49.999%;}
+  #rightfloatImg { text-align: right; display: inline-block; width: 49.999%; padding: 70px 20px 0 3%;}
+  #leftfloatImg {float: left; width: 49.999%; display: block; padding: 70px 3.5% 0 20px ;}
+  #rightfloat {padding-right: 10px; width: 49.999%; display: inline-block; }
+  #dwnldModal {width: 670px; margin: 60px auto; }
+}
+@media only screen and (min-width:1105px) {
+  #leftfloat, #rightfloat {width: 66.666%;}
+  #rightfloatImg, #leftfloatImg {width:33.333%; } 
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
